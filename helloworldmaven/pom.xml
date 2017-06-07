@@ -29,4 +29,28 @@
   	<module>helloworldmvc.contract</module>
   	<module>helloworldmvc.main</module>
   </modules>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.5</version>
+         <reportSets>
+            <reportSet>
+              <id>aggregate</id>
+              <reports>
+              <report>aggregate</report>
+              <report>test-aggregate</report>
+             </reports>
+            </reportSet>
+           </reportSets>
+       </plugin>
+    </plugins>
+  </reporting>
+  <distributionManagement>
+  	<site>
+  		<id>helloworldmaven</id>
+  		<url>file:///C:/temp/</url>
+  	</site>
+  </distributionManagement>
 </project>
