@@ -16,6 +16,7 @@ public class DAOHelloWorld {
 	}
 
 	public static DAOHelloWorld getInstance() {
+		setInstance(new DAOHelloWorld());
 		return instance;
 	}
 
